@@ -1,2 +1,2 @@
 # csci102-projects
-Portfolio Projects from an intro C++ course
+The following repository contains portfolio projects made from an intro C++ course. 
