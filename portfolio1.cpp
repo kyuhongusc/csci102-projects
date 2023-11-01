@@ -1,49 +1,13 @@
-//=============================================================================
-// Name: Kyuhong Lee
-// E-mail: kyuhongl@usc.edu
-// Description: provide a 1-2 sentence description of your program
-// Escape Room/Adventure: You are stuck in a hallway, and you're unsure of how to get out. Try and escape!
-// P.S.) My main code is nested into a while loop that is always true, because I prompt the user several times until they can actually "win"
-// My code will always be running unless a force terminate occurs or if the user wins, so the user can freely move around the 'map' that I created until they win.
-// Because of this, my test inputs will always end with the same output, "You're free!", if the code is running and the user manages to escape,
-// but it's just how they get to that escape that may be slightly different (ex. they could go north one more time instead, not pick up the key, etc.)
-// As such, I was confused on how I was going to show several test inputs, but I (believe) I managed to find a way.
-// ------------------------ Test case Inputs ----------------------------------
-//  Test 1 input (escaping the hallway):
-//   <north, north, north, south, south, yes, north, north, yes, north, yes>
-//  Test 1 output:
-//   <"The hallway extends...", "This hallway seems..." "The gate...", "This hallway...", "You arrive back...", "You picked up the lantern", "This hallway...", "You can now...", "You picked up the key", "There is a giant gate...", "You opened the gate...">
-// 
-//  Test 2 input (inputting an illegitimate direction):
-//   <south, [code will continue running.]>
-//  Test 2 output:
-//   <"You can't go that way. You are back in the area you started in." [code will continue running.]>
-//
-//  Test 3 input (inputting gibberish):
-//   <[any random input, ex. qwerty]>
-//  Test 3 output:
-//   <"I'm not sure what that means. You are back in the area you started in. [code will continue running.]>
-//  
-//  Test 4 input (not picking up the lantern):
-//   <north, north, north, south, south, no, [...]>
-//  Test 4 output:
-//   "The hallway extends...", "This hallway seems..." "The gate...", "This hallway...", "You arrive back...", "You did not pick up the lantern.", [code will continue running.]>
-//
-//=============================================================================
-
-// ------------ Add #includes and other statements here ----------
 #include <iostream>
 using namespace std;
-
-// ------------ Add your main() function below ----------
 
 int main()
 {
   // Initializing variables
-  bool key = false, lantern = false, enteredRoomZero = false, needLantern = false, enteredRoomThree = false, done = true;
+  bool key = false, lantern = false, enteredRoomZero = false, needLantern = false, enteredRoomThree = false, notDone = true;
   int roomNumber = 0;
   string userInput;
-  while (done)
+  while (notDone)
   {
     // Variable roomNumber is used to mark the location of the user, almost like a map
     if (roomNumber == 0)
