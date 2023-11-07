@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Quit when all requests in a given round are false.
+// quit when all requests in a given round are false.
 int main()
 {
     bool requests[100] = {0}; // requests
