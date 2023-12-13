@@ -7,4 +7,5 @@ Portfolio 2 is a simple rock paper scissors game based around loops.
 ---------
 Portfolio 2a uses arrays to make a priority queue to assign people a certain "unit"
 ---------
-**Portfolio 3 uses functions to create a Hunger Games style 'game'**
+Portfolio 3 uses functions to create a Hunger Games style 'game'
+---------
