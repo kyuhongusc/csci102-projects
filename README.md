@@ -5,5 +5,6 @@ Portflio 1 is an escape room/game based around nested if statements and decision
 ---------
 Portfolio 2 is a simple rock paper scissors game based around loops.
 ---------
-Portfolio 3 uses arrays to make a priority queue to assign people a certain "unit"
+Portfolio 2a uses arrays to make a priority queue to assign people a certain "unit"
 ---------
+**Portfolio 3 uses functions to create a Hunger Games style 'game'**
